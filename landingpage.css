@@ -53,3 +53,14 @@ span {
 html {
     font-family: "quick sand";
 }
+.main-navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-clip-path: circle(4rem at 93.5% 4.5rem);
+    clip-path: circle(4rem at 93.5% 4.5rem);
+    background-color: #161616;
+    z-index: 1;
+}
