@@ -1,233 +1,157 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="sidebar-cont">
+        <div class="logo">
+          
+          <p><a href="index1.html" style="text-decoration: none; color: rgb(87, 99, 110);">Kevin</a></p>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li><a href="/#dashboard">Dashboard</a></li>
+            <li><a href="/#article">Article</a></li>
+            <li><a href="/#AddNew">AddArticle</a></li>
+            <li><a href="#message">Message</a></li>
+          </ul>
+        </div>
+        <div class="log-btn">
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
 
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Kevin</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#Blog" class="nav__link">Blogs</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="#login.html" class="nav__link">Login</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Kevin</span><br> Fullstack Web<br> development</h1>
-
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
+      <div class="pages-cont">
+        <div class="header-cont">
+          <div class="opener">
+            <p class="btnOpen active">open</p>
+            <p class="btnOpen">close</p>
+          </div>
+          <div class="account">Account Show</div>
+        </div>
+        <div class="page dash-pg" id="dashboard">
+          <div class="title">Dashboard</div>
+          <div class="bdy">
+            <div>
+              <div class="tab">
+                <a href="#">Accounts</a>
+                
+              </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>UserID</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
                     
-                  
-                    <img src="/assets/img/DISCOVER.jpg" class="images">
-                 
-                    
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/WHY ME.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Kevin</h2>
-                        <p class="about__text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text"><p>I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/project1.jpg" alt="">
-                       <h4 style="margin-left: 20px;">The project <b>Book Movie Ticket:</b><br>
-                       <P style="margin-left: 4px;">HTML/CSS/JAVASCRIPT</P>
-                    </h4>
-                    </div>
-                   
-                    <div class="work__img">
-                        <img src="assets/img/music play app design.jpg" alt="">
-                        <h4 style="margin-left: 20px;">The project <b>Music App UI :</b><br>
-                            <P style="margin-left: 4px;">Figma Design</P>
-                            </h4>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/mobile bank.jpg" alt="">
-                        <h4 style="margin-left: 20px;">The project <b>Mobile Banking UI :</b><br>
-                            <P style="margin-left: 4px;">Figma Design</P>
-                            </h4>
-                  </div>
-                   
-                </div>
-            </section>
-
-            <section class="work section" id="Blog">
-                <h2 class="section-title">Blog</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        
-                        <img src="assets/img/work2.jpg" alt="">
-                        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus maiores, et vitae nesciunt dolor unde aspernatur rerum quod animi corrupti reprehenderit at provident quisquam vero, accusamus recusandae neque ab distinctio.</h4>
-                        <a href="" style="margin-left: 230px; color: cornflowerblue; ">view more</a>
-                    
-                    </div>
-                    <div class="work__img">
-                        
-                        <img src="assets/img/work2.jpg" alt="">
-                        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus maiores, et vitae nesciunt dolor unde aspernatur rerum quod animi corrupti reprehenderit at provident quisquam vero, accusamus recusandae neque ab distinctio.</h4>
-                        <a href="" style="margin-left: 230px; color: cornflowerblue; ">view more</a>
-                    
-                    </div>
-                    <div class="work__img">
-                    
-                        <img src="assets/img/work3.jpg" alt="">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eum explicabo recusandae debitis inventore laborum minus commodi itaque. Dolore, at ad itaque aspernatur placeat minima nesciunt et esse facilis ex.</h4>
-                        <a href="" style="margin-left: 230px; color: cornflowerblue; ">view more</a>
-                    </div>
-                   
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Kevin</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                    <th>Action</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Kevin</td>
+                      <td>Iradukunda</td>
+                      <td>kevin@example.com</td>
+                      
+                      <td><button style="background-color: green; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px;">Edit</button>
+                        <button style="background-color: red; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px;">Delete</button></td>
+                      
+                         
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <p class="footer__copy">&#169; Kevin 2022. All rigths reserved</p>
-        </footer>
+          </div>
 
+          <div class="article" id="article">
+            <div class="title">Articles</div>
+            <div class="bdy">
+              <div class="tab">
+                <a href="#">Articles</a>
+                
+              </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>UserID</th>
+                    <th>Article Title</th>
+                    <th>Article body</th>
+                    <th>Action</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>What Has Happened of All of the Web Design Ideas?</td>
+                      <td>This online page is now complete</td>
+                      <td><button style="background-color: green; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px; "><a href="edit.html" style="text-decoration: none; color: white;">Edit</a></button>
+                        <button style="background-color: red; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px;">Delete</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="article" id="message">
+            <div class="title">Message</div>
+            <div class="bdy">
+              <div class="tab">
+                <a href="#">Message</a>
+                
+              </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>UserID</th>
+                    <th>firstname</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Iradukunda</td>
+                      <td>kevin</td>
+                      <td>iradukundakevin@gmail.com</td>
+                      <td><button style="background-color: green; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px; "><a href="edit.html" style="text-decoration: none; color: white;">Reply</a></button>
+                        
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="modal-cont" id="AddNew">
+            <div class="title">Add Articles</div>
+            <div class="blur"></div>
+            <div class="modal">
+              <form action="#">
+                <input type="text" placeholder="date" />
+                <input type="text" placeholder="Title Name" />
+                <input type="file" accept="image/*" />
+                
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                
+                <textarea
+                  name="articleBody"
+                  id=""
+                  cols="20"
+                  rows="3"
+                  placeholder="Article Body"
+                ></textarea>
+                <a href="#" class="btn">Send</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
