@@ -1,0 +1,157 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="sidebar-cont">
+        <div class="logo">
+          
+          <p><a href="index.html" style="text-decoration: none; color: rgb(87, 99, 110);">Kevin</a></p>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#article">Article</a></li>
+            <li><a href="#AddNew">AddArticle</a></li>
+            <li><a href="#message">Message</a></li>
+          </ul>
+        </div>
+        <div class="log-btn">
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+
+      <div class="pages-cont">
+        <div class="header-cont">
+          <div class="opener">
+            <p class="btnOpen active">open</p>
+            <p class="btnOpen">close</p>
+          </div>
+          <div class="account">Account Show</div>
+        </div>
+        <div class="page dash-pg" id="dashboard">
+          <div class="title">Dashboard</div>
+          <div class="bdy">
+            <div>
+              <div class="tab">
+                <a href="#">Accounts</a>
+                
+              </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>UserID</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    
+                    <th>Action</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Kevin</td>
+                      <td>Iradukunda</td>
+                      <td>kevin@example.com</td>
+                      
+                      <td><button style="background-color: green; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px;">Edit</button>
+                        <button style="background-color: red; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px;">Delete</button></td>
+                      
+                         
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="article" id="article">
+            <div class="title">Articles</div>
+            <div class="bdy">
+              <div class="tab">
+                <a href="#">Articles</a>
+                
+              </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>UserID</th>
+                    <th>Article Title</th>
+                    <th>Article body</th>
+                    <th>Action</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>What Has Happened of All of the Web Design Ideas?</td>
+                      <td>This online page is now complete</td>
+                      <td><button style="background-color: green; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px; "><a href="edit.html" style="text-decoration: none; color: white;">Edit</a></button>
+                        <button style="background-color: red; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px;">Delete</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="article" id="message">
+            <div class="title">Message</div>
+            <div class="bdy">
+              <div class="tab">
+                <a href="#">Message</a>
+                
+              </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>UserID</th>
+                    <th>firstname</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Iradukunda</td>
+                      <td>kevin</td>
+                      <td>iradukundakevin@gmail.com</td>
+                      <td><button style="background-color: green; color:white; width: 70px; height:30px; border-radius: 10px; margin-top: 3px; "><a href="edit.html" style="text-decoration: none; color: white;">Reply</a></button>
+                        
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="modal-cont" id="AddNew">
+            <div class="title">Add Articles</div>
+            <div class="blur"></div>
+            <div class="modal">
+              <form action="#">
+                <input type="text" placeholder="date" />
+                <input type="text" placeholder="Title Name" />
+                <input type="file" accept="image/*" />
+                
+
+                
+                <textarea
+                  name="articleBody"
+                  id=""
+                  cols="20"
+                  rows="3"
+                  placeholder="Article Body"
+                ></textarea>
+                <a href="#" class="btn">Send</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
